@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KA_ForFlows</fullName>
+    <types>
+        <members>KASearchController</members>
+        <members>kaCntr</members>
+        <name>ApexClass</name>
+    </types>
+    <types>
+        <members>DE_KAFLowSearch</members>
+        <members>KAList</members>
+        <members>KALoaded</members>
+        <members>KASearch</members>
+        <name>AuraDefinitionBundle</name>
+    </types>
+    <types>
+        <members>Knowledge__kav.Knowledge</members>
+        <name>CompactLayout</name>
+    </types>
+    <types>
+        <members>Knowledge__kav.Chat_Answer__c</members>
+        <members>Knowledge__kav.FAQ_Answer__c</members>
+        <members>Knowledge__kav.FAQ_External_ID__c</members>
+        <members>Knowledge__kav.FAQ_Internal_Comments__c</members>
+        <members>Knowledge__kav.FAQ_Question__c</members>
+        <members>Knowledge__kav.KCSArticle_Cause__c</members>
+        <members>Knowledge__kav.KCSArticle_Environment__c</members>
+        <members>Knowledge__kav.KCSArticle_Issue__c</members>
+        <members>Knowledge__kav.KCSArticle_Resolution__c</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>KA_Data_Category__mdt</members>
+        <members>Knowledge__kav</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>Knowledge_Record_Page</members>
+        <name>FlexiPage</name>
+    </types>
+    <types>
+        <members>DE_KASearch</members>
+        <name>Flow</name>
+    </types>
+    <types>
+        <members>KA_Data_Category__mdt-KA Data Category Layout</members>
+        <members>Knowledge__kav-Community Knowledge</members>
+        <members>Knowledge__kav-KCS Layout</members>
+        <members>Knowledge__kav-Knowledge Author</members>
+        <members>Knowledge__kav-Knowledge Reader</members>
+        <name>Layout</name>
+    </types>
+    <types>
+        <members>illustration</members>
+        <name>LightningComponentBundle</name>
+    </types>
+    <types>
+        <members>Knowledge__kav.Assigned_Drafts_with_Past_Due_Dates</members>
+        <members>Knowledge__kav.Draft_French_Translations</members>
+        <members>Knowledge__kav.Published_French_Translations</members>
+        <members>Knowledge__kav.archived_articles</members>
+        <members>Knowledge__kav.draft_articles</members>
+        <members>Knowledge__kav.published_articles</members>
+        <name>ListView</name>
+    </types>
+    <types>
+        <members>Knowledge__kav.Cirrus</members>
+        <members>Knowledge__kav.FAQ</members>
+        <members>Knowledge__kav.KCSArticle</members>
+        <name>RecordType</name>
+    </types>
+    <version>50.0</version>
+</Package>

@@ -1,0 +1,23 @@
+<aura:component controller="KASearchController">
+    <aura:registerEvent name="kaLoaded" type="c:KALoaded"/>
+    <aura:handler name="init" value="{!this}" action="{!c.onInit}"/>
+    <aura:attribute name="searchTerm" type="String"/>
+    <aura:attribute name="searchTimeoutId" type="integer" default="100"/>
+    <aura:attribute name="dataCategoryValues" type="List"/>
+    <lightning:card title="Knowledge Search" iconName="standard:search">
+        <div class="slds-form slds-p-around_x-small" onchange="{!c.onSearchTermChange}">
+            <lightning:input
+                             label="Enter your search keyword"
+                             value="{!v.searchTerm}"
+                             placeholder="Search by title"
+                            />
+  
+        <lightning:select aura:id="select" name="select" label="Select a Data Category">
+            <option value="">choose one...</option>
+            <aura:iteration items="{!v.dataCategoryValues}" var="da">
+                <option text="{!da.MasterLabel}" value="{!da.MasterLabel}"></option>
+            </aura:iteration>
+        </lightning:select>
+                  </div>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,10 @@
+<aura:component implements="lightning:availableForFlowScreens,flexipage:availableForAllPageTypes">
+    <aura:attribute name="searchTerm" type="string" default="Solar"/>
+    <div class="slds-card">
+        <div class="slds-box slds-theme_default">
+            <c:KASearch searchTerm="{!v.searchTerm}"/>
+              <c:KAList/>
+        </div>
+                  
+    </div>
+</aura:component>

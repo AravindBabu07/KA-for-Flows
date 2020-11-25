@@ -1,0 +1,36 @@
+<aura:component controller="kaCntr">
+    <aura:handler event="c:KALoaded" action="{!c.onKALoaded}"/>
+    <aura:attribute name="moretabs" type="Aura.Component[]"/>
+    <aura:attribute name="kaRecordId" type="String"/>
+    <lightning:navigation aura:id="navigation"/>
+    <aura:attribute name="rows" type="Map[]"/>
+    <aura:attribute name="cols" type="Map[]"/>
+    <aura:attribute name="showKARecords" type="boolean" default="false"/> 
+    <aura:attribute name="knowledgeList" type="list"/> 
+    
+    <div class="slds-grid slds-gutters">
+        
+        
+        <aura:if isTrue="{!v.rows != NULL}">
+            <lightning:datatable
+                                 data="{!v.rows}"
+                                 columns="{!v.cols}"
+                                 keyField="Id"
+                                 hideCheckboxColumn="true"
+                                 showRowNumberColumn="true"
+                                 onrowaction="{!c.onRowAction}"/>
+            <aura:set attribute="else">
+                <div class="slds-align_absolute-center">
+                <c:illustration
+                                size="small"
+                                variant="No Content"
+                                heading="No Articles found!!"
+                                message="Please enter the data category and search keyword to view the articles"
+                                ></c:illustration>
+                    </div>
+            </aura:set>
+        </aura:if>
+        
+        
+    </div>
+</aura:component>
